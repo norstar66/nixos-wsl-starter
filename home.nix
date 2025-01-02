@@ -1,6 +1,6 @@
 {
   # FIXME: uncomment the next line if you want to reference your GitHub/GitLab access tokens and other secrets
-  # secrets,
+  secrets,
   pkgs,
   username,
   nix-index-database,
@@ -141,18 +141,18 @@ in {
         side-by-side = true;
         navigate = true;
       };
-      userEmail = ""; # FIXME: set your git email
-      userName = ""; #FIXME: set your git username
+      userEmail = "norstar1983@gmail.com"; # set git email
+      userName = "norstat66"; # set git username
       extraConfig = {
         # FIXME: uncomment the next lines if you want to be able to clone private https repos
         # url = {
-        #   "https://oauth2:${secrets.github_token}@github.com" = {
-        #     insteadOf = "https://github.com";
-        #   };
-        #   "https://oauth2:${secrets.gitlab_token}@gitlab.com" = {
-        #     insteadOf = "https://gitlab.com";
-        #   };
-        # };
+        #    "https://oauth2:${secrets.github_token}@github.com" = {
+        #      insteadOf = "https://github.com";
+        #    };
+        #    "https://oauth2:${secrets.gitlab_token}@gitlab.com" = {
+        #      insteadOf = "https://gitlab.com";
+        #    };
+        #  };
         push = {
           default = "current";
           autoSetupRemote = true;
@@ -232,7 +232,7 @@ in {
         
         # To use code as the command, uncomment the line below. Be sure to replace [my-user] with your username. 
         # If your code binary is located elsewhere, adjust the path as needed.
-        # code = "/mnt/c/Users/[my-user]/AppData/Local/Programs/'Microsoft VS Code'/bin/code";
+      code = "/mnt/c/Users/Norstar/AppData/Local/Programs/'Microsoft VS Code'/bin/code";
       };
       plugins = [
         {
